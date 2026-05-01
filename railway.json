@@ -4,7 +4,7 @@
     "buildPack": "nixpacks",
     "nodeVersion": "22",
     "installCommand": "npm install --include=dev",
-    "buildCommand": "npm run build --workspace=client && npx prisma generate",
+    "buildCommand": "npm run build --workspace=client && npx prisma generate --schema=server/prisma/schema.prisma",
     "startCommand": "npm run start --workspace=server"
   },
   "deploy": {
