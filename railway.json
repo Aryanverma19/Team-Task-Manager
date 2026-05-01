@@ -3,8 +3,8 @@
   "build": {
     "buildPack": "nixpacks",
     "nodeVersion": "22",
-    "installCommand": "npm install --workspace=server",
-    "buildCommand": "echo 'No build needed for server'",
+    "installCommand": "npm install",
+    "buildCommand": "npm run build --workspace=client",
     "startCommand": "npm run start --workspace=server"
   },
   "deploy": {
