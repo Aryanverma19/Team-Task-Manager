@@ -3,8 +3,8 @@
   "build": {
     "buildPack": "nixpacks",
     "nodeVersion": "22",
-    "installCommand": "npm install",
-    "buildCommand": "npm run build --workspace=client",
+    "installCommand": "npm install --include=dev",
+    "buildCommand": "npm run build --workspace=client && npx prisma generate",
     "startCommand": "npm run start --workspace=server"
   },
   "deploy": {
