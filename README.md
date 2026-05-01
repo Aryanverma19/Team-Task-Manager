@@ -17,7 +17,13 @@ A full-stack task management app for projects, teams, and role-based task tracki
 1. Install dependencies
 
 ```bash
-npm install
+npm run install-all
+```
+
+For production installs without dev dependencies:
+
+```bash
+npm run install-prod
 ```
 
 2. Create a `.env` file in `server/` with:

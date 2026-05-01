@@ -3,7 +3,7 @@
   "build": {
     "buildPack": "nixpacks",
     "nodeVersion": "22",
-    "installCommand": "npm install --include=dev",
+    "installCommand": "npm_config_production=false npm install --workspaces",
     "buildCommand": "npm run build --workspace=client && npx prisma generate --schema=server/prisma/schema.prisma",
     "startCommand": "npm run start --workspace=server"
   },
